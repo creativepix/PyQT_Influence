@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeMainMenu</class>
+ <widget class="QWidget" name="HomeMainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>325</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainMenu</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>321</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="main_menu_layout">
+    <property name="leftMargin">
+     <number>100</number>
+    </property>
+    <property name="topMargin">
+     <number>100</number>
+    </property>
+    <property name="rightMargin">
+     <number>100</number>
+    </property>
+    <property name="bottomMargin">
+     <number>100</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="play_btn">
+      <property name="text">
+       <string>Играть</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="statistics_btn">
+      <property name="text">
+       <string>Статистики</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="level_editor_btn">
+      <property name="text">
+       <string>Редактор уровней</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

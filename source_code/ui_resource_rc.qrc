@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="gaming">
+    <file>images/gaming/hexagon.png</file>
+    <file>images/gaming/plus_one.png</file>
+    <file>images/gaming/skip.png</file>
+    <file>images/gaming/to_max.png</file>
+    <file>images/gaming/next_phase.png</file>
+  </qresource>
+</RCC>

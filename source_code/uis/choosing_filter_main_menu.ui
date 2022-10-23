@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChoosingFilterMainMenu</class>
+ <widget class="QWidget" name="ChoosingFilterMainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>325</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainMenu</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="form_layout">
+    <property name="formAlignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="leftMargin">
+     <number>50</number>
+    </property>
+    <property name="rightMargin">
+     <number>50</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="num_players_lb">
+      <property name="text">
+       <string>Количество игроков</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="num_players_combo"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="game_type_lb">
+      <property name="text">
+       <string>Режим игры</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="game_type_combo"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDialogButtonBox" name="button_box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>390</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="savings_list">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>321</width>
+     <height>311</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error_lb">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="additional_btn">
+   <property name="geometry">
+    <rect>
+     <x>246</x>
+     <y>370</y>
+     <width>76</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Случайная</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

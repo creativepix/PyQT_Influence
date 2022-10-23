@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: black</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tab_widget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>571</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="game_tab_widget">
+     <attribute name="title">
+      <string>Игра</string>
+     </attribute>
+     <widget class="QWidget" name="widget_hexagon_grid" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>94</y>
+        <width>564</width>
+        <height>321</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="base_game" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>561</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="attack_phase" native="true">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>71</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QHBoxLayout" name="battle_phase">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="next_phase_btn">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: gray</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../ui_resource_rc.qrc">
+            <normaloff>:/gaming/images/gaming/next_phase.png</normaloff>:/gaming/images/gaming/next_phase.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="reinforcement_phase" native="true">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>0</y>
+         <width>211</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="replenishment_phase">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="plus_one_btn">
+          <property name="styleSheet">
+           <string notr="true">background-color: gray</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../ui_resource_rc.qrc">
+            <normaloff>:/gaming/images/gaming/plus_one.png</normaloff>:/gaming/images/gaming/plus_one.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="max_btn">
+          <property name="styleSheet">
+           <string notr="true">background-color: gray</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../ui_resource_rc.qrc">
+            <normaloff>:/gaming/images/gaming/to_max.png</normaloff>:/gaming/images/gaming/to_max.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="skip_btn">
+          <property name="styleSheet">
+           <string notr="true">background-color: gray</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../ui_resource_rc.qrc">
+            <normaloff>:/gaming/images/gaming/skip.png</normaloff>:/gaming/images/gaming/skip.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="status_text">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>20</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: gray</string>
+       </property>
+       <property name="text">
+        <string>Игрок Абдулах Игоревич победил!</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progress_bar">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>50</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar::chunk {
+    background-color: #3add36;
+    width: 1px;
+ }
+
+ QProgressBar {
+    border: 2px solid grey;
+    border-radius: 0px;
+    text-align: center;
+	color: gray
+ }</string>
+       </property>
+       <property name="minimum">
+        <number>0</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="format">
+        <string>Поле заполнено на: %p%</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="reinforcement_points_label">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>0</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: gray</string>
+       </property>
+       <property name="text">
+        <string>Очков на заполнение:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="reinforcement_points">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>0</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: gray</string>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="now_phase_lb">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>70</y>
+         <width>561</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white</string>
+       </property>
+       <property name="text">
+        <string>Фаза атаки</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="statistics_tab_widget">
+     <attribute name="title">
+      <string>Статистика</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <action name="restart_this_map">
+   <property name="text">
+    <string>Перезапустить на этой карте</string>
+   </property>
+  </action>
+  <action name="restart_new_map">
+   <property name="text">
+    <string>Перезапустить на новой карте</string>
+   </property>
+  </action>
+  <action name="exit_to_main_menu">
+   <property name="text">
+    <string>Выход в главное меню</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../ui_resource_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
